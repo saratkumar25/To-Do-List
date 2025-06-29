@@ -12,15 +12,14 @@ A beginner-friendly C++ project to manage a personal to-do list using linked lis
 
 ##  Project Structure
 ```bash
-ToDoListProject/
-│
-├──include
-      ├── Task.h          # Task struct definition
-      ├── Task.cpp        # Task constructor
-├──src
-      ├── ToDoList.h      # To-do list class declarations
-      ├── ToDoList.cpp    # Function implementations
-├── main.cpp        # Main menu interface
+To_Do_List/
+├── include/
+│   ├── Task.h
+│   └── ToDoList.h
+├── src/
+│   ├── Task.cpp
+│   ├── ToDoList.cpp
+├── main.cpp
 ├── tasks.txt       # Saved task data (generated at runtime)
 └── README.md       # Project documentation
 ```
@@ -28,13 +27,13 @@ ToDoListProject/
 ##  How to Compile
 Using g++:
 ```bash
-g++ main.cpp Task.cpp ToDoList.cpp -o ToDoListApp
+g++ -Iinclude src/Task.cpp src/ToDoList.cpp main.cpp -o ToDoListApp
 ```
 
 ##  How to Run
 ```bash
 ./ToDoListApp     # On Unix
-ToDoListApp.exe   # On Windows
+.\ToDoListApp.exe   # On Windows
 ```
 
 ##  File Persistence
@@ -62,7 +61,7 @@ ToDoListApp.exe   # On Windows
 ```
 
 ##  Author
-Built with ❤️ for DSA practice and beginner C++ learners.
+Built with Love for DSA practice and beginner C++ learners.
 
 ---
 Feel free to extend this project by adding:
