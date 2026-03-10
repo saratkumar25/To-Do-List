@@ -16,3 +16,9 @@ To_Do_List/
 └── README.md       # Project documentation
 ```
 
+##  To Run
+
+```bash
+g++ main.cpp src/*.cpp -Iinclude -o ToDoListApp
+.\ToDoListApp
+```
